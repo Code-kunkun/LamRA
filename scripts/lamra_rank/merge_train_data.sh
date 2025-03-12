@@ -1,0 +1,1 @@
+python train/mbeir_merge_rerank_train_data.py

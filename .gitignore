@@ -1,0 +1,14 @@
+checkpoints/
+*.txt
+!requirements.txt
+*.pth
+saved_checkpoints/
+*.pyc
+data/
+hf_upload_checkpoints/
+zeroshot_rerank_files/
+zeroshot_retrieval_eval_results/
+LamRA_Ret_eval_results/
+checkpoints/ 
+rerank_training_data/
+mbeir_rerank_files/

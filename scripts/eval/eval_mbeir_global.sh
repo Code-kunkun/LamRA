@@ -1,0 +1,1 @@
+python eval/eval_mbeir_global.py
