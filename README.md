@@ -2,7 +2,7 @@
 
 This repository is the official implementation of LamRA.
 
-[🏡 Project Page](https://code-kunkun.github.io/LamRA/) |  [📄 Paper](https://arxiv.org/pdf/2412.01720) | [🤗 LamRA-Ret-Qwen2.5VL](https://huggingface.co/code-kunkun/LamRA-Ret-Qwen2.5VL-7b) | [🤗 LamRA-Rank](https://huggingface.co/code-kunkun/LamRA-Rank-Qwen2.5VL-7b) | [🤗 Dataset](https://huggingface.co/datasets/code-kunkun/LamRA_Eval)
+[🏡 Project Page](https://code-kunkun.github.io/LamRA/) |  [📄 Paper](https://arxiv.org/pdf/2412.01720) | [🤗 LamRA-Ret-Qwen2.5VL](https://huggingface.co/code-kunkun/LamRA-Ret-Qwen2.5VL-7b) | [🤗 LamRA-Rank-Qwen2.5VL](https://huggingface.co/code-kunkun/LamRA-Rank-Qwen2.5VL-7b) | [🤗 Dataset](https://huggingface.co/datasets/code-kunkun/LamRA_Eval)
 
 
 ## Installation
