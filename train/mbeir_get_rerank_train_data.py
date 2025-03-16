@@ -1,11 +1,11 @@
 import json
-from transformers import AutoProcessor, LlavaForConditionalGeneration, LlavaNextProcessor
+from transformers import AutoProcessor
 import sys 
 import os 
 current_file_path = os.path.dirname(os.path.abspath(__file__))
 module_path = os.path.join(current_file_path, "../")
 sys.path.append(module_path)
-from models.qwen2_vl import Qwen2VLRetForConditionalGeneration
+from models.qwen2_5_vl import Qwen2_5_VLRetForConditionalGeneration
 import torch 
 import argparse
 from dataset.datasets_mbeir import QueryDataset, CandidateDataset
@@ -67,9 +67,10 @@ def compute_recall_at_k(relevant_docs, retrieved_indices, k):
 def eval(args):
     original_model_id = args.original_model_id
     model_id = args.model_id 
-    model = Qwen2VLRetForConditionalGeneration.from_pretrained(
+    model = Qwen2_5_VLRetForConditionalGeneration.from_pretrained(
         model_id, 
         torch_dtype=torch.bfloat16, 
+        attn_implementation="flash_attention_2", 
         low_cpu_mem_usage=True, 
     )
 
@@ -77,6 +78,7 @@ def eval(args):
     processor = AutoProcessor.from_pretrained(original_model_id)
 
     tokenizer = processor.tokenizer 
+    tokenizer.padding_side = 'left'
     tokenizer.model_max_length = args.model_max_length
 
     def add_embed_token(tokenizer, model, emb_token="<emb>"):
