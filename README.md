@@ -38,7 +38,7 @@ Please refer to the `demo.py`
 
 ## Data Preparation 
 
-Download Qwen2-VL-7B and place it in `./checkpoints/hf_models/Qwen2.5-VL-7B-Instruct`
+Download Qwen2.5-VL-7B and place it in `./checkpoints/hf_models/Qwen2.5-VL-7B-Instruct`
 
 For pre-training dataset, please refer to [link](https://huggingface.co/datasets/princeton-nlp/datasets-for-simcse)
 
